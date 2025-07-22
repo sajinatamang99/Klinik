@@ -19,3 +19,6 @@ output "sonar_public_ip" {
 output "sonar_db_endpoint" {
   value = module.database_rds.sonar_db_endpoint
 }
+output "ecs_klinik_url" {
+  value = module.ecr.ecs_klinik_repo_url
+}

@@ -66,3 +66,8 @@ module "sonarqube" {
   rds_password = module.database_rds.sonar_db_password
 }
 
+module "ecr" {
+  source = "./ecr"
+  # other required variables
+}
+
